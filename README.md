@@ -9,9 +9,7 @@ It will launch an instance of HiSuite, Huawei Smartphone PC Manager, if installe
 
 You will need FirmwareFinder (TeamMT). If you've been around Huawei/Honor forums you should already know what it is. With FF we can track ota updates and even run an authorization test for an update. This is important because we're gonna be using the ota ID and its full link to pass to HiSuite. If you spot an update and your device is not yet authorized to install it your phone will most likely avoid it either.
 
-!IMPORTANT!: I've been using this method since march/19 without any problems. No wipes, connectivity losses, call problems, weird behavior whatsoever. In fact, I'm running EMUI 9.1 now. I don't know how you can ensure the ID you picked is the right one for your device.
-
-Since HiSuite 9+ the cust info is in the update request and I believe HiCloud suggests the right package for your phone. The reason behind this is because the ota file I get sometimes it's different in size and checksum from the one you get from FF even if it's the same ID. Total speculation here.
+!IMPORTANT!: Since HiSuite 9+ the cust info is in the update request and I believe HiCloud suggests the right package for your phone. The reason behind this is because the ota file I get sometimes it's different in size and checksum from the one you get from FF even if it's the same ID. Total speculation here.
 
 ALWAYS take note of the rollback ID suggested by HiCloud. It might look like it's just a regular version but it's not! An update and a rollback IDs are different, with different flash scripts. HiCloud will send rollback data with major updates like from EMUI 8.1 to EMUI 9; EMUI 9 to EMUI 9.1. You can spot both IDs in FF as well.
 
