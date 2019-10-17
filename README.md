@@ -9,7 +9,7 @@ It will launch an instance of HiSuite, Huawei Smartphone PC Manager, if installe
 
 You will need FirmwareFinder (TeamMT). If you've been around Huawei/Honor forums you should already know what it is. With FF we can track ota updates and even run an authorization test for an update. This is important because we're gonna be using the ota ID and its full link to pass to HiSuite. If you spot an update and your device is not yet authorized to install it your phone will most likely avoid it either.
 
-!IMPORTANT!: I've been using this method since march/19 without any problems. No wipes, connectivity losses, call problems, weird behavior whatsoever. In fact, I'm running EMUI 9.1 now. I don't know how you can ensure the ID you picked is the right one for your device - considering you are using the search correctly: for my Honor 10 C636 I search for COL-L29C636. You might notice the name of the device seems a bit strange and here comes a massive confusion. Col-L29 is now COL-LGRP2-OVS (C636 is overseas) with a bunch of small step rom versions like .226 .227. 228 .229. I usually pick the very first version my phone is authorized for. So my last update was .227. After the update I tested my phone for others versions like .228 and .229 and my phone was authorized for those too. Go figure!
+!IMPORTANT!: I've been using this method since march/19 without any problems. No wipes, connectivity losses, call problems, weird behavior whatsoever. In fact, I'm running EMUI 9.1 now. I don't know how you can ensure the ID you picked is the right one for your device.
 
 Since HiSuite 9+ the cust info is in the update request and I believe HiCloud suggests the right package for your phone. The reason behind this is because the ota file I get sometimes it's different in size and checksum from the one you get from FF even if it's the same ID. Total speculation here.
 
@@ -46,12 +46,6 @@ Hit Update in HiSuite and you should see the red dot indicating an ota update (i
 
 - In your phone, about phone page, it might not show the update changelog. Sometimes it does show, sometimes it doesn't.
 
-- I cannot confirm this but since I always update my phone through this method I don't get incremental updates anymore. I don't know if it's because I'm always way ahead (updates usually take forever to reach my phone before and that's why I've been doing all of this) or anything else.
 
-5. Notes:
-
-- I have to thank Smaehtin (XDA) for kindly answering my request to support this tool for Honor 10 and for actually providing this method.
-- Although I'm a professional developer (ERP stuff), I'm not used to C# so the code might look a bit messy and funky here and there. I'm sorry for that.
 - The solution used is from a freeware compiler, SharDevelop (http://www.icsharpcode.net/OpenSource/SD/).
-- Disclaimer here, I am not responsible for any damage you (your phone) might suffer from attempting this. I tested it myself several times in my phone, Honor 10 C636 (COL-L29C636). HiSuite will handle the whole update process but you still can provide wrong data as of wrong IDs or wrong url.
 - We are using EasyHook (https://easyhook.github.io/) and Newtonsoft.Json (https://www.newtonsoft.com/json) libs.
